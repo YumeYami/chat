@@ -74,9 +74,11 @@ public class ChatClient implements Runnable{
 
 	public static void main(String args[]) {
 		ChatClient client = null;
-		if (args.length != 2)
-			System.out.println("Usage: java ChatClient host port");
-		else
-			client = new ChatClient(args[0], Integer.parseInt(args[1]));
+//		if (args.length != 2)
+//			System.out.println("Usage: java ChatClient host port");
+//		else
+//			client = new ChatClient(args[0], Integer.parseInt(args[1]));
+		client = new ChatClient("161.200.212.192", Integer.parseInt("5555"));
+		
 	}
 }
